@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS",
+		"target": "ES5",
+		"outDir": "lib/commonjs",
+		"declaration": true,
+		"declarationDir": "lib/typescript/commonjs",
+		"sourceMap": true
+	},
+	"include": ["src"]
+}

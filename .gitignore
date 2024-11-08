@@ -1,0 +1,8 @@
+# node.js
+node_modules/
+
+# React Native Codegen
+ios/generated
+android/generated
+
+example/

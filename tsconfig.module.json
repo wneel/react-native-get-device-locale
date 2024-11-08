@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"target": "ES5",
+		"outDir": "lib/module",
+		"declaration": true,
+		"declarationDir": "lib/typescript/module",
+		"sourceMap": true
+	},
+	"include": ["src"]
+}

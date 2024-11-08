@@ -4,6 +4,9 @@
 		"target": "ES5",
 		"outDir": "lib/commonjs",
 		"declaration": true,
+		"skipLibCheck": true,
+		"lib": ["ESNext"],
+		"jsx": "react-jsx",
 		"declarationDir": "lib/typescript/commonjs",
 		"sourceMap": true
 	},

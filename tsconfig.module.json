@@ -4,6 +4,10 @@
 		"target": "ES5",
 		"outDir": "lib/module",
 		"declaration": true,
+		"skipLibCheck": true,
+		"lib": ["ESNext"],
+		"jsx": "react-jsx",
+		"moduleResolution": "Bundler",
 		"declarationDir": "lib/typescript/module",
 		"sourceMap": true
 	},

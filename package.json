@@ -36,7 +36,7 @@
 		"build:types": "tsc --emitDeclarationOnly --declaration --declarationDir lib/types",
 		"build:cjstypes": "tsc -p tsconfig.commonjs.json",
 		"build:esmtypes": "tsc -p tsconfig.module.json",
-		"codegen": "npx @react-native-community/cli codegen",
+		"codegen": "npx @react-native-community/cli codegen && node utils/patchCodegen.mjs",
 		"build": "npm run build:babel && npm run build:types && npm run codegen",
 		"prepare": "npm run clean && npm run build"
 	},
@@ -73,6 +73,7 @@
 		"@react-native-community/cli": "15.0.0",
 		"@types/react": "^18.2.44",
 		"del-cli": "^5.1.0",
+		"fs-extra": "^11.2.0",
 		"react": "18.3.1",
 		"react-native": "0.76.1",
 		"react-native-builder-bob": "^0.30.3",
@@ -87,7 +88,7 @@
 	},
 	"codegenConfig": {
 		"name": "RNGetDeviceLocaleSpec",
-		"type": "all",
+		"type": "modules",
 		"jsSrcsDir": "src",
 		"outputDir": {
 			"ios": "ios/generated",

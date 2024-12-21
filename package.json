@@ -24,7 +24,7 @@
 		"android",
 		"ios",
 		"*.podspec",
-		"react-native.config.json",
+		"react-native.config.js",
 		"!ios/build",
 		"!**/.*"
 	],

@@ -11,7 +11,7 @@ react-native-get-device-locale is a lightweight and efficient React Native modul
 | Support |  |
 | ----------- | -----------: |
 | react-native version      | >=0.68 |
-| Android   | soon |
+| Android   | ✅ |
 | iOS   | ✅ |
 | New Architecture   | ✅ |
 
@@ -33,7 +33,7 @@ cd ios && pod install
 ## 📖 Usage Example
 Here's how to use `react-native-get-device-locale to retrieve the device locale:
 ```tsx
-const deviceLocale = await getDeviceLocale("fr_FR"); // Optional default locale if fetching fails
+const deviceLocale = await getDeviceLocale("fr_FR"); // Optional default locale if fetching fails (en_US by default in case of error)
 ```
 <details>
 
@@ -45,20 +45,20 @@ import { View, Text } from 'react-native';
 import { getDeviceLocale } from 'react-native-get-device-locale';
 
 export default function App() {
-  const [locale, setLocale] = useState<string | null>(null);
+	const [locale, setLocale] = useState<string | null>(null);
 
-  useEffect(() => {
-    (async () => {
-      const deviceLocale = await getDeviceLocale();
-      setLocale(deviceLocale);
-    })();
-  }, []);
+	useEffect(() => {
+		(async () => {
+			const deviceLocale = await getDeviceLocale();
+			setLocale(deviceLocale);
+		})();
+	}, []);
 
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Device Locale: {locale}</Text>
-    </View>
-  );
+	return (
+		<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+			<Text>Device Locale: {locale}</Text>
+		</View>
+	);
 }
 ```
 </details>
@@ -80,8 +80,8 @@ Which no longer work in React Native 0.76 and above. getDeviceLocale provides a 
 ## 🔄 Roadmap and Future Features
 Planned additions:
 
-Android support for the `getDeviceLocale` function.
-Alternate locale formats (e.g., `en` or `en-US`).
+- Alternate locale formats (e.g., `en` or `en-US`).
+- Getting all the device locales if multiple.
 
 <br />
 

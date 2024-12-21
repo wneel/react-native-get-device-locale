@@ -1,6 +1,6 @@
 {
 	"name": "react-native-get-device-locale",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "react-native-get-device-locale is a lightweight and efficient React Native module that provides easy access to the device's locale.",
 	"source": "./src/index.tsx",
 	"main": "./lib/commonjs/index.js",
@@ -25,20 +25,20 @@
 		"ios",
 		"*.podspec",
 		"react-native.config.js",
-		"!ios/build",
 		"!**/.*"
 	],
 	"scripts": {
 		"clean": "del-cli lib android/build android/generated ios/generated",
 		"build:cjs": "babel src --out-dir lib/commonjs --extensions \".js,.jsx,.ts,.tsx\" && npm run build:cjstypes",
-		"build:esm": "babel src --out-dir lib/module --extensions \".js,.jsx,.ts,.tsx\" --env-name esm  && npm run build:esmtypes",
+		"build:esm": "babel src --out-dir lib/module --extensions \".js,.jsx,.ts,.tsx\" --env-name esm && npm run build:esmtypes",
 		"build:babel": "npm run build:cjs && npm run build:esm",
 		"build:types": "tsc --emitDeclarationOnly --declaration --declarationDir lib/types",
 		"build:cjstypes": "tsc -p tsconfig.commonjs.json",
 		"build:esmtypes": "tsc -p tsconfig.module.json",
 		"codegen": "npx @react-native-community/cli codegen && node utils/patchCodegen.mjs",
 		"build": "npm run build:babel && npm run build:types && npm run codegen",
-		"prepare": "npm run clean && npm run build"
+		"preprepare": "npm run clean",
+		"prepare": "npm run build"
 	},
 	"keywords": [
 		"react-native-module",
@@ -76,7 +76,6 @@
 		"fs-extra": "^11.2.0",
 		"react": "18.3.1",
 		"react-native": "0.76.1",
-		"react-native-builder-bob": "^0.30.3",
 		"turbo": "^1.10.7",
 		"typescript": "^5.2.2"
 	},

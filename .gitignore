@@ -2,7 +2,11 @@
 node_modules/
 
 # React Native Codegen
+#  ios
 ios/generated
+#  android
 android/generated
+android/.gradle
 
-example/
+# lib
+lib/

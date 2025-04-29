@@ -5,7 +5,7 @@ react-native-get-device-locale is a lightweight and efficient React Native modul
 
 ## ✨ Features
 - Retrieve the device’s locale in `en_US`, `fr_FR` format.
-- Compatible with React Native >= 0.68 and the new architecture (TurboModules).
+- Compatible with React Native >= 0.68, the new architecture (TurboModules) and backward compatibility with old arch.
 - Minimal setup with low resource usage.
 
 | Support |  |
@@ -14,6 +14,7 @@ react-native-get-device-locale is a lightweight and efficient React Native modul
 | Android   | ✅ |
 | iOS   | ✅ |
 | New Architecture   | ✅ |
+| Old Architecture   | ✅ |
 
 <br />
 

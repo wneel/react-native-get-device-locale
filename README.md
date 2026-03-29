@@ -1,4 +1,17 @@
 # react-native-get-device-locale
+
+<p>
+	<a href="https://github.com/wneel/react-native-get-device-locale/blob/HEAD/LICENSE">
+		<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="React Native Wheel Picker is released under the MIT license." />
+	</a>
+	<a href="https://www.npmjs.com/package/react-native-get-device-locale">
+		<img src="https://img.shields.io/npm/v/react-native-get-device-locale?color=brightgreen&label=npm%20package" alt="Current npm package version." />
+	</a>
+	<a href="https://www.npmjs.com/package/react-native-get-device-locale">
+		<img src="https://img.shields.io/npm/dm/react-native-get-device-locale" alt="Number of downloads per week." />
+	</a>
+</p>
+
 react-native-get-device-locale is a lightweight and efficient React Native module that provides easy access to the device's locale. Designed to work seamlessly with React Native’s new architecture, it replaces the now unreliable APIs (NativeModules.SettingsManager.settings.AppleLocale and similar) following recent updates in React Native.
 
 <br />

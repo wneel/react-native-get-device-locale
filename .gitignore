@@ -10,3 +10,6 @@ android/.gradle
 
 # lib
 lib/
+
+# IDE
+.vscode
